@@ -8,8 +8,11 @@ datasource db {
   url      = env("MONGO_URI")
 }
 
-model FDO {
-  id   String @id @default(auto()) @map("_id") @db.ObjectId
-  name String
-  age  Int
+model User {
+  id       String @id @default(auto()) @map("_id") @db.ObjectId
+  name     String
+  email    String
+  address  String
+  contact  String
+  password String
 }
