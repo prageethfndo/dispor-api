@@ -9,10 +9,67 @@ datasource db {
 }
 
 model User {
-  id       String @id @default(auto()) @map("_id") @db.ObjectId
+  id       String    @id @default(auto()) @map("_id") @db.ObjectId
   name     String
   email    String
   address  String
   contact  String
   password String
+  date     DateTime  @default(now())
+  Listing  Listing[]
+  Bid      Bid[]
+}
+
+model Item {
+  id         String   @id @default(auto()) @map("_id") @db.ObjectId
+  name       String
+  material   String
+  unitWeight Int
+  unitPrice  Float
+  date       DateTime @default(now())
+}
+
+model Listing {
+  id          String   @id @default(auto()) @map("_id") @db.ObjectId
+  userId      String
+  title       String
+  description String
+  weight      Int
+  date        DateTime @default(now())
+  status      LISTING_STATUS  @default(AVAILABLE) 
+  price       Float
+  user        User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+  Bid         Bid[]
+}
+
+model Bid {
+  id        String   @id @default(auto()) @map("_id") @db.ObjectId
+  listingId String
+  userId    String
+  amount    Float
+  status    BID_STATUS @default(ACTIVE)
+  date      DateTime @default(now())
+  listing   Listing  @relation(fields: [listingId], references: [id], onDelete: Cascade)
+  user      User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+}
+
+model Sales {
+  id        String   @id @default(auto()) @map("_id") @db.ObjectId
+  listingId String
+  userId    String
+  amount    Float
+  status    Boolean  @default(true)
+  date      DateTime @default(now())
+  
+}
+
+enum LISTING_STATUS{
+  AVAILABLE 
+  SOLD
+}
+
+enum BID_STATUS{
+  ACTIVE
+  CONFIRMED
+  REJECTED
 }

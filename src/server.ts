@@ -11,10 +11,13 @@ app.listen(port, async () => {
 	const client = new PrismaClient();
 	await client.$connect();
 
-	await client.fDO.create({
-		data: {
-			name: "Fernando",
-			age: 23
+	await client.user.create({
+		data: {      
+  name: "Kumara",  
+  email: "kumara@gmail.com", 
+  address  : "kumara inna gedra",
+  contact  : "0745624584",
+  password : "1234Isuru*"
 		}
 	});
 
