@@ -1,0 +1,242 @@
+[
+	{
+		"id": 1,
+		"title": "40 bottles for sale",
+		"price": "35.15",
+		"status": "active",
+		"maxBid": "37.98",
+		"date": "6/13/2022"
+	},
+	{
+		"id": 2,
+		"title": "10 tires for sale",
+		"price": "4.27",
+		"status": "active",
+		"maxBid": "2.63",
+		"date": "6/13/2022"
+	},
+	{
+		"id": 3,
+		"title": "20 cardboard boxes for sale",
+		"price": "61.86",
+		"status": "active",
+		"maxBid": "28.16",
+		"date": "6/13/2022"
+	},
+	{
+		"id": 4,
+		"title": "10 electronic parts for sale",
+		"price": "62.98",
+		"status": "active",
+		"maxBid": "30.94",
+		"date": "6/13/2022"
+	},
+	{
+		"id": 5,
+		"title": "10 cardboard boxes for sale",
+		"price": "52.48",
+		"status": "active",
+		"maxBid": "35.13",
+		"date": "6/13/2022"
+	},
+	{
+		"id": 6,
+		"title": "30 bottles for sale",
+		"price": "32.60",
+		"status": "active",
+		"maxBid": "33.85",
+		"date": "6/13/2022"
+	},
+	{
+		"id": 7,
+		"title": "10 bottles for sale",
+		"price": "73.63",
+		"status": "active",
+		"maxBid": "2.91",
+		"date": "6/13/2022"
+	},
+	{
+		"id": 8,
+		"title": "40 tires for sale",
+		"price": "15.54",
+		"status": "active",
+		"maxBid": "135.40",
+		"date": "6/13/2022"
+	},
+	{
+		"id": 9,
+		"title": "30 cardboard boxes for sale",
+		"price": "9.30",
+		"status": "active",
+		"maxBid": "85.89",
+		"date": "6/13/2022"
+	},
+	{
+		"id": 10,
+		"title": "20 electronic parts for sale",
+		"price": "117.16",
+		"status": "active",
+		"maxBid": "32.98",
+		"date": "6/13/2022"
+	},
+	{
+		"id": 11,
+		"title": "20 tires for sale",
+		"price": "140.77",
+		"status": "active",
+		"maxBid": "87.79",
+		"date": "6/13/2022"
+	},
+	{
+		"id": 12,
+		"title": "20 cardboard boxes for sale",
+		"price": "192.74",
+		"status": "active",
+		"maxBid": "19.38",
+		"date": "6/13/2022"
+	},
+	{
+		"id": 13,
+		"title": "10 electronic parts for sale",
+		"price": "44.88",
+		"status": "active",
+		"maxBid": "37.41",
+		"date": "6/13/2022"
+	},
+	{
+		"id": 14,
+		"title": "20 tires for sale",
+		"price": "196.85",
+		"status": "active",
+		"maxBid": "2.59",
+		"date": "6/13/2022"
+	},
+	{
+		"id": 15,
+		"title": "20 tires for sale",
+		"price": "183.00",
+		"status": "active",
+		"maxBid": "49.18",
+		"date": "6/13/2022"
+	},
+	{
+		"id": 16,
+		"title": "40 bottles for sale",
+		"price": "185.90",
+		"status": "active",
+		"maxBid": "34.55",
+		"date": "6/13/2022"
+	},
+	{
+		"id": 17,
+		"title": "40 cardboard boxes for sale",
+		"price": "2.44",
+		"status": "active",
+		"maxBid": "181.19",
+		"date": "6/13/2022"
+	},
+	{
+		"id": 18,
+		"title": "30 tires for sale",
+		"price": "235.07",
+		"status": "active",
+		"maxBid": "28.24",
+		"date": "6/13/2022"
+	},
+	{
+		"id": 19,
+		"title": "10 bottles for sale",
+		"price": "9.23",
+		"status": "active",
+		"maxBid": "31.03",
+		"date": "6/13/2022"
+	},
+	{
+		"id": 20,
+		"title": "30 cardboard boxes for sale",
+		"price": "238.63",
+		"status": "active",
+		"maxBid": "131.23",
+		"date": "6/13/2022"
+	},
+	{
+		"id": 21,
+		"title": "30 tires for sale",
+		"price": "140.07",
+		"status": "active",
+		"maxBid": "42.88",
+		"date": "6/13/2022"
+	},
+	{
+		"id": 22,
+		"title": "40 tires for sale",
+		"price": "245.55",
+		"status": "active",
+		"maxBid": "81.84",
+		"date": "6/13/2022"
+	},
+	{
+		"id": 23,
+		"title": "20 electronic parts for sale",
+		"price": "199.13",
+		"status": "active",
+		"maxBid": "9.00",
+		"date": "6/13/2022"
+	},
+	{
+		"id": 24,
+		"title": "30 electronic parts for sale",
+		"price": "162.75",
+		"status": "active",
+		"maxBid": "126.48",
+		"date": "6/13/2022"
+	},
+	{
+		"id": 25,
+		"title": "10 cardboard boxes for sale",
+		"price": "7.53",
+		"status": "active",
+		"maxBid": "28.91",
+		"date": "6/13/2022"
+	},
+	{
+		"id": 26,
+		"title": "10 bottles for sale",
+		"price": "77.19",
+		"status": "active",
+		"maxBid": "12.08",
+		"date": "6/13/2022"
+	},
+	{
+		"id": 27,
+		"title": "30 cardboard boxes for sale",
+		"price": "19.29",
+		"status": "active",
+		"maxBid": "140.17",
+		"date": "6/13/2022"
+	},
+	{
+		"id": 28,
+		"title": "10 bottles for sale",
+		"price": "99.93",
+		"status": "active",
+		"maxBid": "38.05",
+		"date": "6/13/2022"
+	},
+	{
+		"id": 29,
+		"title": "30 electronic parts for sale",
+		"price": "271.51",
+		"status": "active",
+		"maxBid": "133.80",
+		"date": "6/13/2022"
+	},
+	{
+		"id": 30,
+		"title": "20 bottles for sale",
+		"price": "110.54",
+		"status": "active",
+		"maxBid": "40.05",
+		"date": "6/13/2022"
+	}
+]
