@@ -1,5 +1,7 @@
 import express, { Response } from "express";
 import { ItemsController } from "./controller/ItemsController";
+import { ListingController } from "./controller/ListingController";
+import { UserController } from "./controller/UserController";
 import { DatabaseService } from "./service/DatabaseService";
 
 const app = express();
@@ -10,7 +12,30 @@ app.use(express.json());
 
 app.post("/login", (req, res) => {});
 
-app.post("/register", (req, res) => {});
+app.post("/users", (req, res) => {
+	UserController.create(req, res).catch((e) => handleError(res, e));
+});
+
+app
+	.route("/listings")
+	.get((req, res) => {
+		ListingController.getAll(req, res).catch((e) => handleError(res, e));
+	})
+	.post((req, res) => {
+		ListingController.create(req, res).catch((e) => handleError(res, e));
+	});
+
+app
+	.route("/listings/:id")
+	.get((req, res) => {
+		ListingController.getOne(req, res).catch((e) => handleError(res, e));
+	})
+	.put((req, res) => {
+		ListingController.update(req, res).catch((e) => handleError(res, e));
+	})
+	.delete((req, res) => {
+		ListingController.delete(req, res).catch((e) => handleError(res, e));
+	});
 
 app
 	.route("/items")
