@@ -63,4 +63,13 @@ export class ListingController {
 
 		return res.json({ deleted: true });
 	}
+
+	static async getUserListings(req: Request, res: Response) {
+		const listings = await prisma.listing.findMany({
+			where: {
+				userId: req.params.id,
+			},
+		});
+		return res.json(listings);
+	}
 }

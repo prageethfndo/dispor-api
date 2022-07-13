@@ -16,6 +16,10 @@ app.post("/users", (req, res) => {
 	UserController.create(req, res).catch((e) => handleError(res, e));
 });
 
+app.route("/users/:id/listings").get((req, res) => {
+	ListingController.getUserListings(req, res).catch((e) => handleError(res, e));
+});
+
 app
 	.route("/listings")
 	.get((req, res) => {
