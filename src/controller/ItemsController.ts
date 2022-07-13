@@ -24,7 +24,7 @@ export class ItemsController {
 			data: {
 				name: req.body.name,
 				unitWeight: parseInt(req.body.unitWeight),
-				unitPrice: parseFloat(req.body.unitWeight),
+				unitPrice: parseFloat(req.body.unitPrice),
 				material: req.body.material,
 			},
 		});
@@ -37,7 +37,7 @@ export class ItemsController {
 			data: {
 				name: req.body.name,
 				unitWeight: parseInt(req.body.unitWeight),
-				unitPrice: parseFloat(req.body.unitWeight),
+				unitPrice: parseFloat(req.body.unitPrice),
 				material: req.body.material,
 			},
 		});
