@@ -12,9 +12,18 @@ app.use(express.json());
 
 app.post("/login", (req, res) => {});
 
-app.post("/users", (req, res) => {
+app.route("/users").post((req, res) => {
 	UserController.create(req, res).catch((e) => handleError(res, e));
 });
+
+app
+	.route("/users/:id")
+	.delete((req, res) => {
+		UserController.delete(req, res).catch((e) => handleError(res, e));
+	})
+	.put((req, res) => {
+		UserController.update(req, res).catch((e) => handleError(res, e));
+	});
 
 app.route("/users/:id/listings").get((req, res) => {
 	ListingController.getUserListings(req, res).catch((e) => handleError(res, e));
