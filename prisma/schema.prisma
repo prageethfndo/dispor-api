@@ -53,14 +53,13 @@ model Bid {
   user      User     @relation(fields: [userId], references: [id], onDelete: Cascade)
 }
 
-model Sales {
+model Sale {
   id        String   @id @default(auto()) @map("_id") @db.ObjectId
   listingId String
   userId    String
   amount    Float
   status    Boolean  @default(true)
   date      DateTime @default(now())
-  
 }
 
 enum LISTING_STATUS{

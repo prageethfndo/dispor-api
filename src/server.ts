@@ -1,4 +1,5 @@
 import express, { Response } from "express";
+import { BidsController } from "./controller/BidsController";
 import { ItemsController } from "./controller/ItemsController";
 import { ListingController } from "./controller/ListingController";
 import { UserController } from "./controller/UserController";
@@ -27,6 +28,10 @@ app
 
 app.route("/users/:id/listings").get((req, res) => {
 	ListingController.getUserListings(req, res).catch((e) => handleError(res, e));
+});
+
+app.route("/users/:id/bids").get((req, res) => {
+	BidsController.getUserBids(req, res).catch((e) => handleError(res, e));
 });
 
 app
@@ -69,6 +74,27 @@ app
 	})
 	.delete((req, res) => {
 		ItemsController.delete(req, res).catch((e) => handleError(res, e));
+	});
+
+app
+	.route("/bids")
+	.get((req, res) => {
+		BidsController.getAll(req, res).catch((e) => handleError(res, e));
+	})
+	.post((req, res) => {
+		BidsController.create(req, res).catch((e) => handleError(res, e));
+	});
+
+app
+	.route("/bids/:id")
+	.get((req, res) => {
+		BidsController.getOne(req, res).catch((e) => handleError(res, e));
+	})
+	.put((req, res) => {
+		BidsController.update(req, res).catch((e) => handleError(res, e));
+	})
+	.delete((req, res) => {
+		BidsController.delete(req, res).catch((e) => handleError(res, e));
 	});
 
 app.listen(port, async () => {
