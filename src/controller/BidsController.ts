@@ -75,4 +75,16 @@ export class BidsController {
 		});
 		return res.json(bids);
 	}
+
+	static async getListingBids(req: Request, res: Response) {
+		const bids = await prisma.bid.findMany({
+			where: {
+				listingId: req.params.id,
+			},
+			include: {
+				user: true,
+			},
+		});
+		return res.json(bids);
+	}
 }

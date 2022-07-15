@@ -55,6 +55,10 @@ app
 		ListingController.delete(req, res).catch((e) => handleError(res, e));
 	});
 
+app.route("/listings/:id/bids").get((req, res) => {
+	BidsController.getListingBids(req, res).catch((e) => handleError(res, e));
+});
+
 app
 	.route("/items")
 	.get((req, res) => {
@@ -76,6 +80,7 @@ app
 		ItemsController.delete(req, res).catch((e) => handleError(res, e));
 	});
 
+// get all bids, create a new bid
 app
 	.route("/bids")
 	.get((req, res) => {
@@ -85,6 +90,7 @@ app
 		BidsController.create(req, res).catch((e) => handleError(res, e));
 	});
 
+// get a single bid, update a bid, and delete using id
 app
 	.route("/bids/:id")
 	.get((req, res) => {
