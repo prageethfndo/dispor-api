@@ -1,4 +1,5 @@
 import express, { Response } from "express";
+import { AuthController } from "./controller/AuthController";
 import { BidsController } from "./controller/BidsController";
 import { ItemsController } from "./controller/ItemsController";
 import { ListingController } from "./controller/ListingController";
@@ -11,8 +12,11 @@ const port = process.env.PORT || 3000;
 // parse json bodies
 app.use(express.json());
 
-app.post("/login", (req, res) => {});
+app.post("/login", (req, res) => {
+	AuthController.login(req, res).catch((e) => handleError(res, e));
+});
 
+// use for registration and dummy data
 app.route("/users").post((req, res) => {
 	UserController.create(req, res).catch((e) => handleError(res, e));
 });
